@@ -52,6 +52,8 @@ The most often-mistaked dialects are Venezualan and Colombian, which is a good s
 
 [wav2vec 2.0: A Framework for Self-Supervised Learning of Speech Representations](https://arxiv.org/abs/2006.11477v3) (Baveski et al., Facebook AI 2020)
 
+[Huggingface Audio Classification Tutorial](https://huggingface.co/docs/transformers/tasks/audio_classification)
+
 # Further Reading
 
 [Towards Data Science Blog about wav2vec2.0](https://towardsdatascience.com/wav2vec-2-0-a-framework-for-self-supervised-learning-of-speech-representations-7d3728688cae)

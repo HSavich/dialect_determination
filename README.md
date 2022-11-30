@@ -26,10 +26,9 @@ The zoomed-out view of this model is we use a CNN on a normalized waveform to ex
 
 # Fine Tuning
 
-The actual training process for this model was relatively light weight, only taking about an hour (and possibly starting to overfit within that time).
+The actual training process for this model was relatively light weight, only taking about half an hour (and starting to overfit within that time).
 
-<img width="281" alt="image" src="https://user-images.githubusercontent.com/46304188/204837681-42a15453-28b9-479a-ad3d-5b2eea15166f.png">
-
+<img width="327" alt="image" src="https://user-images.githubusercontent.com/46304188/204849159-683f5e9b-bafb-46bb-862b-33aad2971b03.png">
 
 # Results
 

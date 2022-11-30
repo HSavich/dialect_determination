@@ -14,5 +14,16 @@ The data for Basque comes from a similar campaign described [here](https://aclan
 
 # The Model
 
-For this task, I used a wav2vec2 as a base before fine tuning.
+For this task, I used a wav2vec2 as a base before fine tuning. This model is introduced [here.](https://arxiv.org/abs/2006.11477)
 
+A quick rundown of the model architecture (image from original paper).
+
+<img width="346" alt="wav2vec2 architecture" src="https://user-images.githubusercontent.com/46304188/204836253-bf8a6445-cbcf-43c5-af8c-13b711e384bc.png">
+
+# Fine Tuning
+
+The actual training process for this model was relatively light weight, only taking about an hour (and possibly starting to overfit within that time).
+
+# Results
+
+![image](https://user-images.githubusercontent.com/46304188/204835858-8a18777b-8f26-4c97-86ab-c01f86356876.png)

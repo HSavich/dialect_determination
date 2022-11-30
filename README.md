@@ -51,3 +51,14 @@ The most often-mistaked dialects are Venezualan and Colombian, which is a good s
 [Open-Source High Quality Speech Datasets for Basque, Catalan and Galician](https://aclanthology.org/2020.sltu-1.3) (Kjartansson et al., SLTU 2020)
 
 [wav2vec 2.0: A Framework for Self-Supervised Learning of Speech Representations](https://arxiv.org/abs/2006.11477v3) (Baveski et al., Facebook AI 2020)
+
+# Further Reading
+
+[Towards Data Science Blog about wav2vec2.0](https://towardsdatascience.com/wav2vec-2-0-a-framework-for-self-supervised-learning-of-speech-representations-7d3728688cae)
+This blog posts offers some easy reading for understanding the wav2vec2.0 model, as well as how it relates to and improves upon models before it.
+
+[Classifying Accents from Spectograms](https://medium.com/analytics-vidhya/using-machine-learning-to-identify-accents-in-spectrograms-of-speech-5db91c191b6b)
+This blog post describes a computer-vision approach to classifying accents by using spectrograms rather than raw waveforms.
+
+[What's a Language Anyways?](https://www.theatlantic.com/international/archive/2016/01/difference-between-language-dialect/424704/)
+Outside the machine-learning realm, this The Atlantic article discusses the nuances of classifying languages, dialects, accents, etc. These nuances describe what's achievable with a dialect identifier like the one I trained. Sidenote: this author, John McWhorter, has a great podcast about linguistics!

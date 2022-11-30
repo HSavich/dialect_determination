@@ -8,7 +8,7 @@ In this project, I have trained a wav2vec2 model to classify Spanish speakers ba
 
 The high-quality audio clips of Spanish were introduced in a 2020 ACL Anthology paper available [here](https://aclanthology.org/2020.lrec-1.801/).
 
-<img width="675" alt="image" src="https://user-images.githubusercontent.com/46304188/204837959-709d57b0-979d-4ca8-9367-c7409a7c440b.png">
+<img width="693" alt="spanish dialects dataset info" src="https://user-images.githubusercontent.com/46304188/204838210-5680d0cf-6e33-47c2-9cfc-88ecca5d7633.png">
 
 For each language, the dataset contains a variety of speakers with different speaker profiles. This is favorable to some other datasets with 1 or very few speakers because our model is more likely to learn identifiers of dialects than individual voices / prosodies.
 

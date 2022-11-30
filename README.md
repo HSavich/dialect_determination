@@ -22,6 +22,8 @@ A quick rundown of the model architecture (image from original paper).
 
 <img width="346" alt="wav2vec2 architecture" src="https://user-images.githubusercontent.com/46304188/204836253-bf8a6445-cbcf-43c5-af8c-13b711e384bc.png">
 
+The zoomed-out view of this model is we use a CNN on a normalized waveform to extract features. From the features we use a transformer network to learn a contextualized representation, but also use a discretized representation that helps our model identify distinct speech units. Both the discretized and contextualized representations are passed forward in the network.
+
 # Fine Tuning
 
 The actual training process for this model was relatively light weight, only taking about an hour (and possibly starting to overfit within that time).

@@ -33,5 +33,14 @@ The actual training process for this model was relatively light weight, only tak
 
 # Results
 
+![image](https://user-images.githubusercontent.com/46304188/204847009-c2683496-b7e6-48fc-8452-94be8d373729.png)
 
-![image](https://user-images.githubusercontent.com/46304188/204835858-8a18777b-8f26-4c97-86ab-c01f86356876.png)
+Accuracy = 0.89
+
+# Analysis
+
+Our model achieves good results, but because of the number of speakers in the dataset, it is likely that the model, at least to some degree, learned which voices belong to which class. Unfortunately, the speaker information isn't labeled in the public dataset, so it is difficult to split our train-test data on different speakers. The fact that there are misclassifications though is paradoxically reassuring because it hints that our model is not doing completely voice-matching, where we would expect near-perfect results.
+
+The distribution of the confusion matrix offers some interesting insight into the relationship between dialects. We would expect Basque to be the most easily identified because it is a different language than the rest of them, but while it is close, it actually seems to be less identifiable than Peruvian Spanish. 
+
+The most often-mistaked dialects are Venezualan and Colombian, which is a good sign we are learning information based on accents. Although I personally am not super familiar with how different Latin American Spanish accents sound, Colombia and Venezuala share a border and have relatively high population exchange.

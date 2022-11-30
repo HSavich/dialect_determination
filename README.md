@@ -43,3 +43,11 @@ Our model achieves good results, but because of the number of speakers in the da
 The distribution of the confusion matrix offers some interesting insight into the relationship between dialects. We would expect Basque to be the most easily identified because it is a different language than the rest of them, but while it is close, it actually seems to be less identifiable than Peruvian Spanish. 
 
 The most often-mistaked dialects are Venezualan and Colombian, which is a good sign we are learning information based on accents. Although I personally am not super familiar with how different Latin American Spanish accents sound, Colombia and Venezuala share a border and have relatively high population exchange.
+
+# References
+
+[Crowdsourcing Latin American Spanish for Low-Resource Text-to-Speech](https://aclanthology.org/2020.lrec-1.801) (Guevara-Rukoz et al., LREC 2020)
+
+[Open-Source High Quality Speech Datasets for Basque, Catalan and Galician](https://aclanthology.org/2020.sltu-1.3) (Kjartansson et al., SLTU 2020)
+
+[wav2vec 2.0: A Framework for Self-Supervised Learning of Speech Representations](https://arxiv.org/abs/2006.11477v3) (Baveski et al., Facebook AI 2020)

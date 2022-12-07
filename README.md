@@ -32,17 +32,17 @@ The actual training process for this model was relatively light weight, only tak
 
 # Results
 
-![image](https://user-images.githubusercontent.com/46304188/204847009-c2683496-b7e6-48fc-8452-94be8d373729.png)
+![image](https://user-images.githubusercontent.com/46304188/206084896-0de8f6a2-17ef-433b-be8f-0c106e74c058.png)
 
-Accuracy = 0.89
+Accuracy = 0.980
 
 # Analysis
 
-Our model achieves good results, but because of the number of speakers in the dataset, it is likely that the model, at least to some degree, learned which voices belong to which class. Unfortunately, the speaker information isn't labeled in the public dataset, so it is difficult to split our train-test data on different speakers. The fact that there are misclassifications though is paradoxically reassuring because it hints that our model is not doing completely voice-matching, where we would expect near-perfect results.
+Even splitting on speakers, our model achieves excellent accuracy on the testing set. This is interesting because it indicates that accent classification, at least at this granularity, is an easier task than voice identification, which could have just as easily met the training objective.
 
-The distribution of the confusion matrix offers some interesting insight into the relationship between dialects. We would expect Basque to be the most easily identified because it is a different language than the rest of them, but while it is close, it actually seems to be less identifiable than Peruvian Spanish. 
+The confusion matrix shows that Basque is the most easily distinguished, which should be expecting as it is the only language that isn't Spanish. Puerto Rican was the hardest to identify in the testing set, but I think this is more having to do with PR having the least data moreso than something about the accent itself.
 
-The most often-mistaked dialects are Venezualan and Colombian, which is a good sign we are learning information based on accents. Although I personally am not super familiar with how different Latin American Spanish accents sound, Colombia and Venezuala share a border and have relatively high population exchange.
+I think if this same size of dataset was used for this same experiment, but there were more speakers (and so not as much fitting on individual voices), we could expect near perfect accuracy.
 
 # References
 

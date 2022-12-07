@@ -64,3 +64,9 @@ This blog post describes a computer-vision approach to classifying accents by us
 
 [What's a Language Anyways?](https://www.theatlantic.com/international/archive/2016/01/difference-between-language-dialect/424704/)
 Outside the machine-learning realm, this The Atlantic article discusses the nuances of classifying languages, dialects, accents, etc. These nuances describe what's achievable with a dialect identifier like the one I trained. Sidenote: this author, John McWhorter, has a great podcast about linguistics!
+
+# This Model on Huggingface Hub
+
+https://huggingface.co/hhsavich/accent_determinator
+
+

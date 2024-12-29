@@ -2,7 +2,7 @@
 
 A common method of handling speech audio in language tasks is to transcribe the audio into text, and then perform the task on the transcribed text. However, in some cases salient information is lost in the process of transcription. One class of these cases is when we want to investigate a certain manner of speaking.
 
-In this project, I have trained a wav2vec2 model to classify Spanish speakers based on their accents by where they are from. The data we use contains five locales of Latin American Spanish, as well as Basque to further investigate how much easier we can expect language discrimination to be compared to dialect discrimination.
+This project trains a wav2vec2 model to classify Spanish speech based on the accent of the speaker. The dataset contains five dialects of Latin American Spanish, with each dialect represented by multiple speakers. Additionally, Basque is added to the dataset to further investigate how much easier we can expect language determination to be compared to dialect determination.
 
 # The Data
 

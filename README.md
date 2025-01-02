@@ -22,11 +22,11 @@ The image below, pulled from the original paper, provides a visual overview of t
 
 <img width="346" alt="wav2vec2 architecture" src="https://user-images.githubusercontent.com/46304188/204836253-bf8a6445-cbcf-43c5-af8c-13b711e384bc.png">
 
-Wav2vec2 use a CNN on a normalized waveform to extract features. From the features, a transformer network learns a contextualized representation, but also uses a discretized representation that helps our model identify distinct speech units. Both the discretized and contextualized representations are passed forward in the network.
+Wav2vec2 use a CNN on a normalized waveform to extract features. From the features, a transformer network learns a contextualized representation as well as a discretized representation that helps our model identify distinct speech units. Both the discretized and contextualized representations are passed forward in the network.
 
 # Fine Tuning
 
-The actual training process for this model was relatively light weight, only taking about half an hour (and starting to overfit within that time).
+The training process for this model is lightweight, taking only half an hour before starting to overfit.
 
 <img width="327" alt="image" src="https://user-images.githubusercontent.com/46304188/204849159-683f5e9b-bafb-46bb-862b-33aad2971b03.png">
 
@@ -40,7 +40,7 @@ Accuracy = 0.980
 
 Even splitting on speakers, our model achieves excellent accuracy on the testing set. This is interesting because it indicates that accent classification, at least at this granularity, is an easier task than voice identification, which could have just as easily met the training objective.
 
-The confusion matrix shows that Basque is the most easily distinguished, which should be expecting as it is the only language that isn't Spanish. Puerto Rican was the hardest to identify in the testing set, but I think this is more having to do with PR having the least data moreso than something about the accent itself.
+The confusion matrix shows that Basque is the most easily distinguished, which should be expected as it is the only language that isn't Spanish. Puerto Rican was the hardest to identify in the testing set, which is likely attributable to Puerto Rican Spanish having the lowest number of audio clips in the dataset. 
 
 I think if this same size of dataset was used for this same experiment, but there were more speakers (and so not as much fitting on individual voices), we could expect near perfect accuracy.
 

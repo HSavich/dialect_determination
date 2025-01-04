@@ -2,7 +2,7 @@
 
 A common method of handling speech audio in language tasks is to transcribe the audio into text, and then perform the task on the transcribed text. However, in some cases salient information is lost in the process of transcription. One class of these cases is when we want to investigate a certain manner of speaking.
 
-This project trains a wav2vec2 model to classify Spanish speech based on the accent of the speaker. The dataset contains five dialects of Latin American Spanish, each dialect represented by multiple speakers. Basque is added to the dataset to further investigate how much easier we can expect language determination to be compared to dialect determination.
+This project trains a wav2vec2 model to classify speech based on the accent of the speaker. The dataset contains five dialects of Latin American Spanish, each accent represented by multiple speakers. Basque is added to the dataset to further investigate how much easier we can expect language determination to be compared to accent determination.
 
 # The Data
 
@@ -10,13 +10,13 @@ The high-quality audio clips of Spanish were introduced in a 2020 ACL Anthology 
 
 <img width="693" alt="spanish dialects dataset info" src="https://user-images.githubusercontent.com/46304188/204838210-5680d0cf-6e33-47c2-9cfc-88ecca5d7633.png">
 
-For each language, the dataset contains a various speakers with different speaker profiles. This is preferable to some other datasets with one or very few speakers because our model is more likely to learn identifiers of dialects than individual voices / prosodies.
+For each language, the dataset contains audio clips from various speakers with different speaker profiles. Using multiple speakers for each accent is necessary for the model to identify accents based on regional variations, rather than using individual voices and prosodies.
 
 The data for Basque comes from a similar campaign described [here](https://aclanthology.org/2020.sltu-1.3/), only with a focus on minority Western European languages rather than Latin American Spanish.
 
 # The Model
 
-For this task, a fine-tuned wav2vec2 model is used. This model was introduced in a [paper from Facebook AI.](https://arxiv.org/abs/2006.11477)
+A fine-tuned wav2vec2 model is used for this tasked. This architecture of this model was introduced in a [paper from Facebook AI.](https://arxiv.org/abs/2006.11477)
 
 The image below, pulled from the original paper, provides a visual overview of the model's high-level architecture.
 

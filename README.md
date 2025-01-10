@@ -38,7 +38,7 @@ Accuracy = 0.980
 
 # Analysis
 
-Even splitting on speakers, our model achieves excellent accuracy on the testing set. This is interesting because it indicates that accent classification, at least at this granularity, is an easier task than voice identification, which could have just as easily met the training objective.
+Our model achieves excellent accuracy on the testing set. This is interesting in light of the fact that we split on speakers, so the training objective could have been satisfied by learning to identify individual voices, which would have led to low testing accuracy. Instead, we find that the wav2vec2 model learns to classify accents **before** it tries to "cheat" by identifying voices. This suggests that accent classification may be an easier task than voice classification.
 
 The confusion matrix shows that Basque is the most easily distinguished, which should be expected as it is the only language that isn't Spanish. Puerto Rican was the hardest to identify in the testing set, which is likely attributable to Puerto Rican Spanish having the lowest number of audio clips in the dataset. 
 
